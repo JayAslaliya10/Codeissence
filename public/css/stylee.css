@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-image:"images/back.jpeg" ; 
+    background-color: #0c0b0b;
+} 
+h1{
+    font-weight: 5px;
+font-family:  'Montserrat', sans-serif;
+}
+h2{
+    padding:20px
+}
+p{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+    line-height: 20px;}
+.co{
+    color:white;
+    font-weight: 10px;
+    font-family:  'Montserrat', sans-serif;
+}
+ .banner{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color:black;  */
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0,0.75)), url(public/images/disaster.jpg);
+    background-image: "public/images/disaster.jpg";
+    background-size: cover;
+    background-position: center;
+    margin-bottom:0px;
+} 
+.pp{
+    color: #e20c04; font-weight: bold; font-size:30px;
+}
+.vv{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:20px; 
+}
+.fg{
+    color:#0c0b0b;
+}
+.bb{
+    font-size:15px;
+}
+.style{
+    background-color: #FFD1D1;
+    color:#0c0b0b;
+    padding:10px;
+}
+
+.h2{
+    margin:0px;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    /* padding: 35px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.logo{
+    width: 120px;
+     cursor: pointer; 
+} 
+.navbar ul li{
+     list-style: none; 
+     display: inline-block;
+    margin: 0 20px; 
+ } 
+.navbar ul li a{
+    text-decoration:solid; 
+    color:white ;
+    font-size: medium;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+
+}  
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width: 0;
+    background:#fff;
+    position: relative;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}  */
+ .navbar ul li:hover::after{
+    width:100%;
+    color:aquamarine;
+
+} 
+.content{
+    width: 100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+    color:#e20c04;
+    margin:30px;
+}
+.content h1{
+    font-size: 40px;
+    margin-top: 5%;
+    position:relative;
+    /* font-family: 'Oswald', sans-serif; */
+}
+.photo{
+    height: 100%;
+    width:100%;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 30px;
+    line-height:25px;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+.as{
+    position:relative;
+    display:inline;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: 10px solid;
+    border: 3px solid #e20c04;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    position:relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+}
+.ii{
+ background:#e20c04;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+} 
+button:hover span{
+    width:100%;
+
+}
+button hover{
+   border:none;
+} 
+
+/* AAYUSHI ABOUT US */
+
+
+
+
+.about-1{
+    margin: 30px;
+    padding: auto;
+
+    text-align: center ;
+}
+.about-2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+.about-1 p{
+    text-align:center;
+    padding: 3px;
+    color: #fff;
+}
+
+.about-1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px ;
+    color: #e20c04;
+    margin:20px;
+}
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px,30px;
+    box-shadow: 0 0 9px rgba(0,0,0 .6);
+
+}
+ .ab{
+    color: #0c0b0b;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+} 
+.abb{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.ad{
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 10px; */
+    line-height: 20px;
+
+} 
+
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+color:#0c0b0b;
+}
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color:#e20c04;
+    margin: 0 auto;
+    border: none;
+
+}
+.about{
+    z-index:1;
+}
+.about-item p{
+    margin-top: 20px;
+
+}
+
+.about-item:hover{
+    background-color: #e20c04;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+footer{
+    background:#212226;
+    padding: 20px;
+}
+footer p{
+    color: white;
+}

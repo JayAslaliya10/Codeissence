@@ -1,0 +1,58 @@
+<%- include("partials/header");  -%>
+<div class="banner">
+    <div class="navbar">
+        <img src="images/rescue.png" class="logo">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            
+            <li><a href="community">COMMUNITY</a></li>
+            <li><a href="donate">DONATE</a></li>
+            <li><a href="aboutus">ABOUT US</a></li>
+            <li><a href="contact">CONTACT</a></li>
+            
+          
+            <li><a href="signup">Signup</a></li>
+            
+        </ul>
+    </div> 
+</div>
+
+    <div class="content">
+        <h1> Saved <span class="co">5900+</span> Lives <br>
+         Protecting <span class="co">properties</span></h1>
+         <br>
+        <p>Fire fighters team saved 6000+ Lives and ninty two <br>acres of forest from fire</p>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+            <form action="/fire" method="post">
+                <button type ="button btn-openid submit" ><span class="ii"></span> FIRE </button>
+            </form>
+            </div>
+            <div class="col-lg-6">
+            <form action="/health" method="post">
+                <button type="button submit"> <span class="ii"></span> HEALTH</button>
+            </form>
+        </div>
+            <!-- <button type ="button btn-openid" href="/fire" ><span class="ii"></span> FIRE </button> -->
+            <div class="col-lg-6">
+            <form action="/crime" method="post">
+                <button type="button submit"><span class="ii"></span>  CRIME</button>
+            </form>
+        </div>
+        
+        
+            <div class="col-md-6">
+            <form action="/calamity" method="post">
+            <button type="button submit"> <span class="ii"></span> Calamity </button>
+            </form>
+        </div>
+        </div>
+    </div>
+  
+   
+
+    
+
+<%- include("partials/footer");  -%>
