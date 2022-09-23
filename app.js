@@ -107,11 +107,15 @@ app.post("/fire",(req,res)=>{
             })
             // console.log(number);
         })
-    
     ).then(msg=>{
         console.log('message sent successfully');
     }).catch(err=>{
         console.log(err);
+    })
+
+    desc=emergencyDesc.create({
+        description:req.body.description,
+        contact
     })
 
     // twilio.messages.create({
