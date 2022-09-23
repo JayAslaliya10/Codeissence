@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose; 
 
-const userSchema = new Schema({
-  name: {
+const descSchema = new Schema({
+  description: {
     type: String,
     required: true,
   },
@@ -11,20 +11,12 @@ const userSchema = new Schema({
     required: true,
     unique: true,
   },
-  email: {
+  address: {
     type: String,
     required: true,
     unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  address:{
-    type:String,
-    requir2ed:true
   }
 });
 
 
-module.exports = mongoose.model("users", userSchema);
+module.exports = mongoose.model("emergencyDesc", descSchema);
