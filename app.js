@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 //jshint esversion:6
 const express = require("express");
@@ -11,7 +10,7 @@ const mongoose=require("mongoose");
 var twilio=require('twilio');   
 var accountSid = "ACcaca11fc101c73f5fbc854f8bb7d49b1"; // Your Account SID from www.twilio.com/console
 var authToken ="853ae72af4a5b37834bc0022a53c11fc"; 
-const app = express();
+const app = Express();
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -88,14 +87,13 @@ app.post("/health",function(req,res){
 app.listen(3000, function () {
     console.log("server started on port 3000");
 });
-=======
-const express=require('express')
-const mongoose=require('mongoose')
+// const express=require('express')
+// const mongoose=require('mongoose')
 const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const User=require('./models/user')
 const emergencyDesc=require('./models/emergencydesc')
-const app=express()
+// const app=express()
 
 ACCOUNT_SID="AC7cfae453d585e28499d880d5be57a23a"
 AUTH_TOKEN="8e457010af2e69808c6261dfb64838d2"
@@ -265,4 +263,3 @@ app.post("/calamity",(req,res)=>{
 app.listen(3000,()=>{
     console.log('listening to port 3000');
 })
->>>>>>> 245d9593c0f4aa58009754ba5e122b1e47d56931
