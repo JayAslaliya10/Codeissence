@@ -89,8 +89,10 @@ app.post('/signup',async(req, res)=>{
   
         user = await User.create({
           name : req.body.txt,
+          phone : req.body.phone,
           email : req.body.email,
-          password : req.body.pswd,
+          password : req.body,
+          address: req.body.pswd,
         })
 
         numberslist.push(String(req.body.phone))
